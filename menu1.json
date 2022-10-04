@@ -1,0 +1,53 @@
+[
+{
+  "id":0,
+  "naam":"Dal makhani",
+  "kha":"Punjab",
+  "kab":"200",
+  "kitna":"190"
+},
+{
+  "id":1,
+  "naam":"Dal fry",
+  "kha":"Delhi",
+  "kab":"200",
+  "kitna":"160"
+},
+{
+  "id":2,
+  "naam":"Buttr Naan",
+  "kha":"Bombay",
+  "kab":"200",
+  "kitna":"120"
+},
+{
+  "id":3,
+  "naam":"Dal fry",
+  "kha":"Delhi",
+  "kab":"150",
+  "kitna":"100"
+},
+{
+  "id":4,
+  "naam":"Butter Roti",
+  "kha":"Jaipur",
+  "kab":"150",
+  "kitna":"100"
+},
+{
+  "id":5,
+  "naam":"Dal fry",
+  "kha":"Hisar",
+  "kab":"120",
+  "kitna":"100"
+},
+{
+  "id":6,
+  "naam":"Bundi Raita",
+  "kha":"Jaipur",
+  "kab":"150",
+  "kitna":"100"
+}
+
+
+]
