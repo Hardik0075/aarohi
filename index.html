@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width" initial-scale="1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+
+    input[type=submit] {
+      background-color: red;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      margin-top: 10rem;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
+    <title>The Foodies</title>
+  </head>
+  <body>
+
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+<header>
+
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;&#9776;</a>
+      <a href="./index.html">Home</a>
+      <a href="./review.html">Review</a>
+      <a href="./gallery.html">Gallery</a>
+    </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="container-fluid">
+
+
+
+      <a class="navbar-brand new" href="#">The Foodies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link new" href="#do">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link new" href="./review.html">Review</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle new" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="./gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item " href="./contact.html">Menu-1 </a></li>
+              <li><a class="dropdown-item " href="./try.html">Menu-2</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle new" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="#doit">Contact</a></li>
+              <li><a class="dropdown-item " href="./aa.html">To Order</a></li>
+              </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success search " type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--  <h2 style="color:">Hello</h2>
+    <button type="button" name="button" onclick="functionit()"> <a href="http://localhost:3000/in">Home</a> </button>
+<button type="button" name="button"> <a href="http://localhost:3000/review">Review</a> </button>
+<button type="button" name="button"> <a href="http://localhost:3000/gallery">Gallery and Menu</a> </button>
+<button type="button" name="button"> <a href="http://localhost:3000/contact">Contact</a> </button>
+-->
+</header>
+<section id="body">
+<div class="container-fluid">
+<div class="row ">
+
+  <div class="hg gt col-lg-6 col-sm-12">
+      <h3>&#129365;
+    Come and Eat the Best for Health.</h3>
+    <h3 id="home">&#129374; Every meal is a Happy Meal.</h3>
+    <h3>&#128222; 24x7 Available At Your Services. </h3>
+    <h3>&#127936; Gaming Zone For Children.</h3>
+    <h3 class="ram">&#127866; Good beer for Good Friends.</h3>
+    </div>
+    <div class="bur hg col-lg-6 col-sm-12" style="padding-top: 0px;">
+      <img src="./images/burger.gif" alt="" class="burger img-fluid " onclick="images">
+
+</div>
+</div>
+</div>
+</section>
+<div class="text">
+  <div class="paraone">
+    <div class="textone">
+<p>The Foodies Restaurant has been successfully owned and operated since 1984 and welcomes you to drop by and join the locals in our fun and friendly atmosphere. We are located close to the beach in Santa Barbara, California.</p>  </div>
+    <div class="imgone">
+<img src="./images/rest2.jpg" id="do" class="imgh" alt="">
+    </div>
+  </div>
+  <div class="paratwo">
+    <div class="imgtwo">
+
+      <img src="./images/rest3.jpg" class="imgh" alt="">
+    </div>
+<div class="texttwo">
+Our goal is to offer great homemade food at a reasonable price while maintaining great quality and service. Enjoy a selection of appetizers, sandwiches, fresh seafood, steak, pastas, fresh salads, homemade desserts and daily specials, including everything from classic favorites to modern cuisine. We offer a full bar.
+</div>
+
+  </div>
+</div>
+
+
+<footer class="jk">
+  <div class="row" >
+    <div class="col-4 col-md-12" style=" width:90%;height:50%;">
+
+    </div>
+
+      <div class="col-4 col-md-12  " style=" width:100%;height:50%; " >
+       <img src="./images/twi.jpg" alt="" class="ifd img-fluid ">
+       <img src="./images/ins.jpg" alt=""  class="ifd img-fluid" id="doit">
+       <img src="./images/fac.jpg" alt=""  class="ifd img-fluid">
+        <p class="last" style="font-size:2rem;" ><b>&#169; Copyright-2022 Reserved.</b></p>
+      </div>
+        <div class="col-4 col-md-12" style=" width:100%;height:50%;">
+
+
+        </div>
+  </div>
+
+
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">↑</button>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script src="Js.js">
+
+    </script>
+  </body>
+</html>

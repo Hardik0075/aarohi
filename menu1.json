@@ -1,0 +1,53 @@
+[
+{
+  "id":0,
+  "naam":"Dal",
+  "kha":"Punjab",
+  "kab":"200",
+  "kitna":"190"
+},
+{
+  "id":1,
+  "naam":"coffee",
+  "kha":"Delhi",
+  "kab":"200",
+  "kitna":"160"
+},
+{
+  "id":2,
+  "naam":"Naan",
+  "kha":"Bombay",
+  "kab":"200",
+  "kitna":"120"
+},
+{
+  "id":3,
+  "naam":"paneer",
+  "kha":"Delhi",
+  "kab":"150",
+  "kitna":"100"
+},
+{
+  "id":4,
+  "naam":"B.Roti",
+  "kha":"Jaipur",
+  "kab":"150",
+  "kitna":"100"
+},
+{
+  "id":5,
+  "naam":"Churan",
+  "kha":"Hisar",
+  "kab":"120",
+  "kitna":"100"
+},
+{
+  "id":6,
+  "naam":"Raita",
+  "kha":"Jaipur",
+  "kab":"150",
+  "kitna":"100"
+}
+
+
+]

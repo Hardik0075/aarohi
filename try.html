@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  margin-top: 10rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+    <title></title>
+  </head>
+  <body style="background-color:dark-gray">
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+       document.body.style.backgroundColor = "white";
+    }
+    </script>
+
+
+    <div class="row  bg-dark">
+      <div class="col-lg-4" style="padding-top:10px">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="./index.html">Home</a>
+          <a href="./review.html">Review</a>
+          <a href="./gallery.html">Gallery</a>
+        </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h3 class="wecan" style="display:inline; padding-left:10px;margin-top:10px;">Fast Food</h3>
+      </div>
+
+        <div class="col-lg-4">
+          <h2>                         </h2>
+        </div>
+          <div class="col-lg-4 logo">
+            <h3>The Foodies</h3>
+          </div>
+    </div>
+<div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+<h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
+<div class="w3-row w3-center w3-border w3-border-dark-grey">
+<a href="#pizza"><div class="w3-third w3-padding-large w3-red">Pizza</div></a>
+<a href="#pasta"><div class="w3-third w3-padding-large w3-hover-red">Pasta</div></a>
+<a href="#starters"><div class="w3-third w3-padding-large w3-hover-red">Starters</div></a>
+</div>
+<div id="pizza" class="w3-container w3-white w3-padding-32" style="
+  background-color: gray;">
+<h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+<hr>
+<h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+<p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+<hr>
+<h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+<hr>
+<h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+<hr>
+<h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+</div>
+<h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">PASTA</h1>
+<div class="w3-container w3-white w3-padding-32">
+<h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+<p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+<hr>
+<h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+<p class="w3-text-grey">Ravioli filled with cheese</p>
+<hr>
+<h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+</div>
+<h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
+<div class="w3-container w3-white w3-padding-32">
+<h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+<p class="w3-text-grey">Ask the waiter</p>
+<hr>
+<h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+<p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+<hr>
+<h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+<p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item ">
+          <a class="nav-link yok" href="./index.html">Home</a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link yok" href="./review.html" role="button" >
+        Review
+          </a>
+
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link yok" href="./aa.html" role="button" >
+            To Order
+          </a>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">↑</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  </body>
+</html>
